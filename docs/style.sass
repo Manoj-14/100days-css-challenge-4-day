@@ -1,0 +1,68 @@
+$bgcolor1: #E56262
+$bgcolor2: #fff
+$bezier: cubic-bezier(.21,.98,.6,.99)
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+    body
+        .container
+            @include center
+            height: 100vh
+            .background
+                width: 400px
+                height: 400px
+                background-color: $bgcolor1
+                @include center
+                *
+                    background-color: $bgcolor2
+                    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3)
+                    border-radius: 50%
+                    position: absolute
+                    animation-fill-mode: both
+                    // @include center
+                .out-cir
+                    width: 120px
+                    height: 120px
+                    z-index: 2
+                    animation: inner-animation 2s $bezier infinite alternate
+                .mid-cir
+                    width: 80px
+                    height: 80px
+                    z-index: 4
+                    animation: mid-animation 2s $bezier infinite alternate
+                .in-cir
+                    width: 40px
+                    height: 40px
+                    z-index: 6
+                    animation: out-animation 2s $bezier infinite alternate
+@keyframes out-animation
+    0%, 70%
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2)
+        transform: scale(0)
+
+    100%
+        box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3)
+        transform: scale(1)
+@keyframes mid-animation
+    0%, 40%
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2)
+        transform: scale(0)
+
+    100%
+        box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3)
+        transform: scale(1)
+@keyframes inner-animation
+    0%, 10%
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2)
+        transform: scale(0)
+
+    100%
+        box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3)
+        transform: scale(1)

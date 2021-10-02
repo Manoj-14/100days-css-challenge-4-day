@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+* body .container .background {
+  width: 400px;
+  height: 400px;
+  background-color: #E56262;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container .background * {
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+* body .container .background .out-cir {
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+  -webkit-animation: inner-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: inner-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+* body .container .background .mid-cir {
+  width: 80px;
+  height: 80px;
+  z-index: 4;
+  -webkit-animation: mid-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: mid-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+* body .container .background .in-cir {
+  width: 40px;
+  height: 40px;
+  z-index: 6;
+  -webkit-animation: out-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: out-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+@-webkit-keyframes out-animation {
+  0%, 70% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes out-animation {
+  0%, 70% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes mid-animation {
+  0%, 40% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes mid-animation {
+  0%, 40% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes inner-animation {
+  0%, 10% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes inner-animation {
+  0%, 10% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
