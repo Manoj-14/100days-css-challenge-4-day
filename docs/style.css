@@ -47,24 +47,24 @@
   width: 120px;
   height: 120px;
   z-index: 2;
-  -webkit-animation: inner-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
-          animation: inner-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+  -webkit-animation: inner-animation 2.5s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: inner-animation 2.5s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
 }
 
 * body .container .background .mid-cir {
   width: 80px;
   height: 80px;
   z-index: 4;
-  -webkit-animation: mid-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
-          animation: mid-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+  -webkit-animation: mid-animation 2.5s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: mid-animation 2.5s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
 }
 
 * body .container .background .in-cir {
   width: 40px;
   height: 40px;
   z-index: 6;
-  -webkit-animation: out-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
-          animation: out-animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+  -webkit-animation: out-animation 2.5s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: out-animation 2.5s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
 }
 
 @-webkit-keyframes out-animation {
